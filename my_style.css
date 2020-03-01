@@ -1,0 +1,25 @@
+/*Telefoonscherm */
+body{
+	background-color: tan;
+}
+
+/*Je gaat hier van telefoon over op tablet */
+@media only screen and (min-width: 600px) and (max-width: 900px){
+	body{
+		background-color: purple;
+	}
+}
+
+/*Je gaat hier van tablet over op een klein laptop scherm */
+@media only screen and (min-width: 900px) and (max-width: 1100px){
+	body{
+		background-color: blue;
+	}
+}
+
+/*Je gaat hier van een klein laptop scherm over op een grote desktop versie*/
+@media only screen and (min-width: 1100px){
+	body{
+		background-color: pink;
+	}
+}

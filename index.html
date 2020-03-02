@@ -8,12 +8,79 @@
 	</head>
 	<body>
 		<div class="hoofdblok">
-			<canvas id="mychart"></canvas>
+			<canvas id="mychart1"></canvas>
+			<canvas id="mychart2"></canvas>
+			<canvas id="mychart3"></canvas>
 		</div>		
 		<script type="text/javascript">
-			let mychart = document.getElementById('mychart').getContext('2d');
+			
+			let mychart1 = document.getElementById('mychart1').getContext('2d');
 
-			let massPopChart = new Chart(mychart, {
+			let manvrouwChart = new Chart(mychart1, {
+				type: 'pie',//bar, horizontalBar, Pie, line, doughnout
+				data:{
+					labels: ['Vrouw','Man'],
+					datasets: [{
+						label: 'Passagiers',
+						data: [
+							63,
+							42
+						]
+						//backgroundColor: 'green'
+						backgroundColor:[
+							'rgba(255, 99, 132, 0.6)',
+							'rgba(54, 162, 235, 0.6)'
+						]
+					}],
+				},
+				options:{
+					title:{
+						display: true,
+						text: 'Geslacht passagiers'
+					}
+				},
+
+			});
+
+			let mychart2 = document.getElementById('mychart2').getContext('2d');
+
+			let leeftijdChart = new Chart(mychart2, {
+				type: 'bar',//bar, horizontalBar, Pie, line, doughnout
+				data:{
+					labels: ['Kinderen (0 t/m 12)','Tieners (12 t/m 20)', 'Junioren (21 t/m 30)', 'Gemiddelde leeftijd (31 t/m 65)', 'Senioren (vanaf 65)'],
+					datasets: [{
+						label: 'Passagiers',
+						data: [
+							8,
+							12,
+							33,
+							45,
+							7
+						]
+						//backgroundColor: 'green'
+						/*backgroundColor:[
+							'rgba(255, 99, 132, 0.6)',
+							'rgba(54, 162, 235, 0.6)',
+							'rgba(255, 206, 86, 0.6)',
+							'rgba(75, 192, 192, 0.6)',
+							'rgba(153, 102, 255, 0.6)',
+							'rgba(255, 99, 132, 0.6)'
+						]
+						*/
+					}],
+				},
+				options:{
+					title:{
+						display: true,
+						text: 'Leeftijd passagiers'
+					}
+				},
+
+			});
+
+			let mychart3 = document.getElementById('mychart3').getContext('2d');
+
+			let afkomstChart = new Chart(mychart3, {
 				type: 'bar',//bar, horizontalBar, Pie, line, doughnout
 				data:{
 					labels: ['Amerika','Europa', 'Afrika', 'Azie', 'Oceanie', 'Antartica'],
@@ -39,9 +106,16 @@
 						*/
 					}],
 				},
-				options:{},
+				options:{
+					title:{
+						display: true,
+						text: 'Afkomst passagiers'
+					}
+				},
 
 			});
+
+			
 		</script>
 	</body>
 </html>

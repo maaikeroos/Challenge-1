@@ -1,3 +1,6 @@
+.blokitem{
+	background-color: white;
+}
 /*Telefoonscherm */
 @media only screen and (max-width: 600px){
 	body{
@@ -7,8 +10,14 @@
 	.hoofdblok{
 		width:100%;
 		background-color: tan;
-		height: 400px;
-		margin: auto;
+	}
+	.hoofdblok:after{
+		content: "";
+		display: table;
+		clear: both;
+	}
+	.blokitem{
+		width: 100%; 
 	}
 }
 
@@ -18,7 +27,7 @@
 		background-color: purple;
 	}
 	.blokitem{
-		width: 33,3%;
+		width: 50%;
 	}
 }
 
@@ -28,7 +37,7 @@
 		background-color: blue;
 	}
 	.blokitem{
-		width: 50%;
+		width: 33,3%;
 	}
 }
 
@@ -38,8 +47,6 @@
 		background-color: pink;
 	}
 	.blokitem{
-		background-color: white;
-		width: 100%;
-		float: left;
+		width: 33,3%;
 	}
 }

@@ -4,17 +4,37 @@
 		<meta charset="UTF-8" />
 		<title>Challenge 1</title>
 		<link type="text/css" href="my_style.css" rel="stylesheet" />
+		<canvas id="myChart" width="400" height="400"></canvas>
+		<script>
+			var myPieChart = new Chart(ctx, {
+   				type: 'pie',
+    			data = {
+    				datasets: [{
+    					data: [50, 53]
+    				}]
+
+    				labels: [
+    					'Man',
+    					'Vrouw'
+    				]
+    			};
+    			options: options
+			});
+		</script>
 	</head>
 	<body>
 		<div class="hoofdblok">
 			<div class="blokitem">
-				hier komt een datavisualisatie
+				<h2>Datavisualisatie 1</h2>
+				<p>In deze datavisualisatie zie je ...</p>
 			</div>
 			<div class="blokitem">
-				hier komt een datavisualisatie
+				<h2>Datavisualisatie 2</h2>
+				<p>In deze datavisualisatie zie je ...</p>
 			</div>
 			<div class="blokitem">
-				hier komt een datavisualisatie
+				<h2>Datavisualisatie 3</h2>
+				<p>In deze datavisualisatie zie je ...</p>
 			</div>
 		</div>		
 	</body>

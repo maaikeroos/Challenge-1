@@ -1,12 +1,24 @@
 /*Telefoonscherm */
-body{
-	background-color: tan;
+@media only screen and (max-width: 600px){
+	body{
+		background-color: tan;
+	}
+
+	.hoofdblok{
+		width:100%;
+		background-color: tan;
+		height: 400px;
+		margin: auto;
+	}
 }
 
 /*Je gaat hier van telefoon over op tablet */
 @media only screen and (min-width: 600px) and (max-width: 900px){
 	body{
 		background-color: purple;
+	}
+	.blokitem{
+		width: 33,3%;
 	}
 }
 
@@ -15,11 +27,19 @@ body{
 	body{
 		background-color: blue;
 	}
+	.blokitem{
+		width: 50%;
+	}
 }
 
 /*Je gaat hier van een klein laptop scherm over op een grote desktop versie*/
 @media only screen and (min-width: 1100px){
 	body{
 		background-color: pink;
+	}
+	.blokitem{
+		background-color: white;
+		width: 100%;
+		float: left;
 	}
 }

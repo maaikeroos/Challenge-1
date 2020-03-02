@@ -4,38 +4,34 @@
 		<meta charset="UTF-8" />
 		<title>Challenge 1</title>
 		<link type="text/css" href="my_style.css" rel="stylesheet" />
-		<canvas id="myChart" width="400" height="400"></canvas>
-		<script>
-			var myPieChart = new Chart(ctx, {
-   				type: 'pie',
-    			data = {
-    				datasets: [{
-    					data: [50, 53]
-    				}]
-
-    				labels: [
-    					'Man',
-    					'Vrouw'
-    				]
-    			};
-    			options: options
-			});
-		</script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>	
 	</head>
 	<body>
 		<div class="hoofdblok">
-			<div class="blokitem">
-				<h2>Datavisualisatie 1</h2>
-				<p>In deze datavisualisatie zie je ...</p>
-			</div>
-			<div class="blokitem">
-				<h2>Datavisualisatie 2</h2>
-				<p>In deze datavisualisatie zie je ...</p>
-			</div>
-			<div class="blokitem">
-				<h2>Datavisualisatie 3</h2>
-				<p>In deze datavisualisatie zie je ...</p>
-			</div>
+			<canvas id="mychart"></canvas>
 		</div>		
+		<script type="text/javascript">
+			let mychart = document.getElementById('mychart').getContext('2d');
+
+			let massPopChart = new Chart(mychart, {
+				type: 'bar',//bar, horizontalBar, Pie, line, doughnout
+				data:{
+					labels: ['Amerika','Europa', 'Afrika', 'Azie', 'Oceanie', 'Antartica'],
+					datasets: [{
+						label: 'Passagiers',
+						data: [
+							35,
+							25,
+							20,
+							30,
+							15,
+							3
+						]
+					}],
+				},
+				options:{},
+
+			});
+		</script>
 	</body>
 </html>

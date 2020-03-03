@@ -3,6 +3,7 @@
 body{
     background-color: white;
     width: 100%;
+    margin: 0px;
 }
 .hoofdblok{
     display: flex;
@@ -38,7 +39,7 @@ h2{
 @media only screen and (max-width: 600px){
      .hoofdblok{
         flex-wrap: wrap;
-        flex-direction: row;
+        flex-direction: column;
     }
     .geslacht, .leeftijd, .afkomst{
         width: 85%;

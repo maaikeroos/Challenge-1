@@ -32,27 +32,41 @@ h2{
         flex-wrap: wrap;
         flex-direction: row;
     }
-    .blok{
-        width: 45%;
+    .geslacht, .leeftijd, .afkomst{
+        width: 85%;
     }
 }
 
 /*Je gaat hier van tablet over op kleine desktop */
 @media only screen and (min-width: 900px) and (max-width: 1100px){
-
+    .geslacht{
+        width: 42.5%;
+    }
+    .leeftijd{
+        width: 42.5%;
+    }
+    .afkomst{
+        width: 85%;
+    }
+    .hoofdblok{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
 }
 
 /*Je gaat hier van kleine desktop over op een grote desktop */
 @media only screen and (min-width: 1100px){
     .geslacht{
-        width: 30%;
-        flex-wrap: wrap;
-        flex-direction: ro
+        width: 25%;
     }
     .leeftijd{
         width: 55%;
     }
     .afkomst{
         width: 85%;
+    }
+    .hoofdblok{
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }

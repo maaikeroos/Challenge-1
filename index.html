@@ -7,7 +7,7 @@
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>	
 	</head>
 	<body>
-		<h2>Informatie passagiers</h2>
+		<h1>Informatie passagiers</h1>
 		<div class="hoofdblok">
 			<div class="blok, geslacht">
 				<canvas id="mychart1"></canvas>
@@ -24,7 +24,7 @@
 			let mychart1 = document.getElementById('mychart1').getContext('2d');
 
 			let manvrouwChart = new Chart(mychart1, {
-				type: 'pie',//bar, horizontalBar, Pie, line, doughnout
+				type: 'doughnut',//bar, horizontalBar, Pie, line, doughnout
 				data:{
 					labels: ['Vrouw','Man'],
 					datasets: [{
@@ -32,8 +32,11 @@
 						data: [
 							63,
 							42
-						]
-						//backgroundColor: 'green'
+						],
+						backgroundColor: [
+							'#E97369',
+							'#E8558F'
+						],
 					}],
 				},
 				options:{
@@ -48,7 +51,7 @@
 			let mychart2 = document.getElementById('mychart2').getContext('2d');
 
 			let leeftijdChart = new Chart(mychart2, {
-				type: 'bar',//bar, horizontalBar, Pie, line, doughnout
+				type: 'horizontalBar',//bar, horizontalBar, Pie, line, doughnout
 				data:{
 					labels: ['Kinderen (0 t/m 12)','Tieners (12 t/m 20)', 'Junioren (21 t/m 30)', 'Gemiddelde leeftijd (31 t/m 65)', 'Senioren (vanaf 65)'],
 					datasets: [{
@@ -59,17 +62,15 @@
 							33,
 							45,
 							7
-						]
+						],
 						//backgroundColor: 'green'
-						/*backgroundColor:[
-							'rgba(255, 99, 132, 0.6)',
-							'rgba(54, 162, 235, 0.6)',
-							'rgba(255, 206, 86, 0.6)',
-							'rgba(75, 192, 192, 0.6)',
-							'rgba(153, 102, 255, 0.6)',
-							'rgba(255, 99, 132, 0.6)'
-						]
-						*/
+						backgroundColor:[
+							'#F0A58E',
+							'#E97369',
+							'#E8558F',
+							'#DD4AB2',
+							'#AF4BCF'
+						],
 					}],
 				},
 				options:{
@@ -93,20 +94,20 @@
 							35,
 							25,
 							20,
-							30,
-							15,
-							3
-						]
+							31,
+							17,
+							0
+						],
 						//backgroundColor: 'green'
-						/*backgroundColor:[
-							'rgba(255, 99, 132, 0.6)',
-							'rgba(54, 162, 235, 0.6)',
-							'rgba(255, 206, 86, 0.6)',
-							'rgba(75, 192, 192, 0.6)',
-							'rgba(153, 102, 255, 0.6)',
-							'rgba(255, 99, 132, 0.6)'
-						]
-						*/
+						backgroundColor:[
+							'#F0A58E',
+							'#E97369',
+							'#E8558F',
+							'#DD4AB2',
+							'#AF4BCF',
+							'#7D39C0'
+						],
+						
 					}],
 				},
 				options:{

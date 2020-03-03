@@ -13,6 +13,7 @@ body{
     margin: auto;
 }
 .geslacht, .leeftijd, .afkomst {
+    width: 85%;
     background-color: white;
     padding: 20px;
     margin: 10px;
@@ -22,8 +23,8 @@ body{
     box-shadow: 0 0 20px #777777;
 }
 .canvas{
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
 }
 h1{
     text-align: center;
@@ -34,13 +35,6 @@ h2{
     text-align: center;
     color: #6F6F6F;
     font-family: Roboto;
-}
-.hoofdblok{
-    flex-wrap: wrap;
-       flex-direction: row;
-}
-.geslacht, .leeftijd, .afkomst{
-    width: 85%;
 }
 
 /*Je gaat hier van telefoon over op tablet */

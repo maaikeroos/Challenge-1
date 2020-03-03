@@ -7,10 +7,17 @@
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>	
 	</head>
 	<body>
+		<h2>Informatie passagiers</h2>
 		<div class="hoofdblok">
-			<canvas id="mychart1"></canvas>
-			<canvas id="mychart2"></canvas>
-			<canvas id="mychart3"></canvas>
+			<div class="blok, geslacht">
+				<canvas id="mychart1"></canvas>
+			</div>
+			<div class="blok, leeftijd">
+				<canvas id="mychart2"></canvas>
+			</div>
+			<div class="blok, afkomst">
+				<canvas id="mychart3"></canvas>
+			</div>
 		</div>		
 		<script type="text/javascript">
 			
@@ -27,10 +34,6 @@
 							42
 						]
 						//backgroundColor: 'green'
-						backgroundColor:[
-							'rgba(255, 99, 132, 0.6)',
-							'rgba(54, 162, 235, 0.6)'
-						]
 					}],
 				},
 				options:{

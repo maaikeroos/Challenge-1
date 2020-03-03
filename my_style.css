@@ -13,7 +13,6 @@ body{
     margin: auto;
 }
 .geslacht, .leeftijd, .afkomst {
-    width: 85%;
     background-color: white;
     padding: 20px;
     margin: 10px;
@@ -35,6 +34,15 @@ h2{
     text-align: center;
     color: #6F6F6F;
     font-family: Roboto;
+}
+@media only screen and (max-width: 600px){
+     .hoofdblok{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .geslacht, .leeftijd, .afkomst{
+        width: 85%;
+    }   
 }
 
 /*Je gaat hier van telefoon over op tablet */

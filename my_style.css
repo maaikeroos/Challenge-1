@@ -35,6 +35,13 @@ h2{
     color: #6F6F6F;
     font-family: Roboto;
 }
+.hoofdblok{
+    flex-wrap: wrap;
+       flex-direction: row;
+}
+.geslacht, .leeftijd, .afkomst{
+    width: 85%;
+}
 
 /*Je gaat hier van telefoon over op tablet */
 @media only screen and (min-width: 600px) and (max-width: 900px){
